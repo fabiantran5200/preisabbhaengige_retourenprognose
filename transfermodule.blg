@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'transfermodule.blg'
+[44] biber:340> INFO - === Fri Feb 10, 2023, 09:39:06
+[54] Biber.pm:415> INFO - Reading 'transfermodule.bcf'
+[100] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[109] Biber.pm:4340> INFO - Processing section 0
+[117] Biber.pm:4531> INFO - Looking for bibtex format file 'quellen.bib' for section 0
+[118] bibtex.pm:1689> INFO - LaTeX decoding ...
+[120] bibtex.pm:1494> INFO - Found BibTeX data source 'quellen.bib'
+[144] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[144] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[144] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[144] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[147] bbl.pm:654> INFO - Writing 'transfermodule.bbl' with encoding 'UTF-8'
+[148] bbl.pm:757> INFO - Output to transfermodule.bbl

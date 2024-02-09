@@ -1,0 +1,53 @@
+\documentclass[transfermodule]{naklatex}
+
+%Literatur Einstellungen
+\usepackage[backend=biber, style=authoryear, hyperref=true, natbib=true, maxbibnames=9, maxcitenames=2]{biblatex}
+\usepackage{color}
+\DefineBibliographyStrings{ngerman}{
+        andothers = {{et\,al\adddot}},
+}
+\ExecuteBibliographyOptions{sorting=nty}
+\addbibresource{quellen.bib}
+
+%import glossaries files
+\loadglsentries{content/glossary.tex}
+\loadglsentries{content/acronym.tex}
+
+\begin{document}
+	\hypersetup{pageanchor=false}
+
+	\title{Arbeit}
+	\studentnumber{12345}
+	\class{A16a}
+	\thema{Das ist das Thema der TL}
+	\transfermodulenumber{3}
+
+	\maketitle
+
+	\input{deckblattTransfereLeistung.tex}
+
+	%\input{EidesstattlicheErklaerung.tex}
+
+	%\input{content/sperrvermerk.tex}
+	\input{content/gendergerechteSprache.tex}
+
+	\hypersetup{pageanchor=true}
+	\pagestyle{scrheadings}
+	\frontmatter 
+	\tableofcontents
+	\printglossaries
+
+	\lstlistoflistings
+	{\let\clearpage\relax \listoffigures}
+	{\let\clearpage\relax \listoftables}
+
+	\mainmatter
+	\input{content/einleitung.tex}
+	\input{content/hauptteil.tex}
+
+	\printbibliography[title={Literaturverzeichnis}]
+
+	\appendix
+	\input{content/anhang.tex}
+	\backmatter
+\end{document}

@@ -1,0 +1,64 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{blubb}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3caf5cdff60d1395e0c63c46959f2146}{%
+           family={Paletta},
+           familyi={P\bibinitperiod},
+           given={Damian},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{location}{1}{%
+        {The Wall Street Journal}%
+      }
+      \strng{namehash}{3caf5cdff60d1395e0c63c46959f2146}
+      \strng{fullhash}{3caf5cdff60d1395e0c63c46959f2146}
+      \strng{bibnamehash}{3caf5cdff60d1395e0c63c46959f2146}
+      \strng{authorbibnamehash}{3caf5cdff60d1395e0c63c46959f2146}
+      \strng{authornamehash}{3caf5cdff60d1395e0c63c46959f2146}
+      \strng{authorfullhash}{3caf5cdff60d1395e0c63c46959f2146}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Wall Street Journal}
+      \field{month}{01}
+      \field{note}{Zugriff 06.03.2015}
+      \field{title}{Report: ISIS Backers Used at Least 46,000 Twitter Accounts in 2014}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://blogs.wsj.com/digits/2015/03/06/report-isis-backers-used-at-least-46000-twitter-accounts-in-2014/?mod=ST1
+      \endverb
+      \verb{url}
+      \verb http://blogs.wsj.com/digits/2015/03/06/report-isis-backers-used-at-least-46000-twitter-accounts-in-2014/?mod=ST1
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

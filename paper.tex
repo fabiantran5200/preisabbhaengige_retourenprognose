@@ -1,0 +1,59 @@
+\documentclass[paper]{naklatex}
+
+%Literatur Einstellungen
+\usepackage[backend=biber, style=alphabetic]{biblatex}
+\ExecuteBibliographyOptions{sorting=nty}
+\addbibresource{quellen.bib}
+
+%import glossaries files
+\loadglsentries{content/glossary.tex}
+\loadglsentries{content/acronym.tex}
+
+\begin{document}
+	\hypersetup{pageanchor=false}
+	\author{
+		Max Mustermann
+	}
+	\title{Arbeit}
+	\subtitle{Unterüberschrift}
+
+	\TitlePageStyle{NAK}
+	\maketitle[%
+	mainlogo=\textcolor{red}{{%
+	  % You may add a company logo here!
+	  \includegraphics{image/Nordakademie_Logo_gross}%
+	}},
+	title=\textcolor{red}{Bachelorarbeitsthema},
+	subject=\textcolor{red}{BACHELORARBEIT},
+	degree=\textcolor{red}{Bachelor of Engineering},
+	discipline=\textcolor{red}{Studiengang},
+	university=Nordakademie,
+	place={},
+	duration=\textcolor{red}{12 Wochen},
+	matriculationnumber=\textcolor{red}{Matrikelnummer},
+	course=\textcolor{red}{Kurskürzel},
+	company=\textcolor{red}{Firmenname, Stadt},
+	advisor=\textcolor{red}{Titel Vorname Nachname},
+	referee={Gutachter\and Gutachter2},
+	date=\textcolor{red}{Abgabedatum}
+  ]
+
+	\hypersetup{pageanchor=true}
+	\pagestyle{scrheadings}
+	\frontmatter
+	\tableofcontents
+	\printglossaries
+
+	\mainmatter
+	\input{content/einleitung.tex}
+	\input{content/hauptteil.tex}
+
+
+	\printbibliography[title={Literaturverzeichnis}]
+	\listoffigures
+	\listoftables
+	\appendix
+	\input{content/anhang.tex}
+	\backmatter
+
+\end{document}
